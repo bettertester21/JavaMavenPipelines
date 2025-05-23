@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DataDrivenFramework"  thread-count="30" configfailurepolicy="continue">
+	<listeners>
+		<listener class-name="com.yash.listeners.CustomListener"/>
+		<listener class-name="com.yash.listeners.AnnotationTransformer"/>
+	</listeners>
+	<test name="Login Test" >
+		<classes>
+			<class name="com.yash.testcases.swaglabs.LoginTest"/>
+		</classes>
+	</test>
+	<test name="Buy Product Test">
+		<classes>
+<!--			<class name="com.yash.testcases.swaglabs.LoginTest"/>-->
+			<class name="com.yash.testcases.swaglabs.BuyProductTest"/>
+		</classes>
+	</test>
+</suite>
+
+

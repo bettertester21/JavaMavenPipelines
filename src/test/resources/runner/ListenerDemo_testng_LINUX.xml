@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DataDrivenFramework">
+	<listeners>
+		<listener class-name="com.yash.listeners.CustomListener"/>
+		<listener class-name="com.yash.listeners.AnnotationTransformer"/>
+	</listeners>
+	<test name="LoginTest">
+		<classes>
+			<class name="com.yash.rough.SampleTest"/>
+		</classes>
+	</test>
+</suite>
+
+
