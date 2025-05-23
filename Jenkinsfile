@@ -2,7 +2,7 @@
 
 pipeline {
 
-  agent an
+  agent any
 
   stages {
 
