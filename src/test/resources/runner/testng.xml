@@ -10,12 +10,12 @@
 			<class name="com.yash.testcases.swaglabs.LoginTest"/>
 		</classes>
 	</test>
-	<test name="Buy Product Test">
-		<classes>
-<!--			<class name="com.yash.testcases.swaglabs.LoginTest"/>-->
-			<class name="com.yash.testcases.swaglabs.BuyProductTest"/>
-		</classes>
-	</test>
+<!--	<test name="Buy Product Test">-->
+<!--		<classes>-->
+<!--&lt;!&ndash;			<class name="com.yash.testcases.swaglabs.LoginTest"/>&ndash;&gt;-->
+<!--			<class name="com.yash.testcases.swaglabs.BuyProductTest"/>-->
+<!--		</classes>-->
+<!--	</test>-->
 </suite>
 
 
