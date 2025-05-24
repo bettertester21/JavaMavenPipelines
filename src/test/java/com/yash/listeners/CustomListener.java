@@ -96,7 +96,7 @@ public class CustomListener extends BaseTest implements ITestListener {
     public void onStart(ITestContext context) {
         log.info("In onStart()");
         ITestListener.super.onStart(context);
-        context.setAttribute("WebDriver", this.driver);
+        context.setAttribute("WebDriver", driver);
     }
 
     @Override

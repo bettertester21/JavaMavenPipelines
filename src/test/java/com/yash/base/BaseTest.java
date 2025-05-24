@@ -92,20 +92,20 @@ public class BaseTest {
             {
                 switch (platform) {
                     case MAC:
-                       System.setProperty("webdriver.chrome.driver", userDir + "/src/test/resources/executables/MAC/chromedriver");
+//                       System.setProperty("webdriver.chrome.driver", userDir + "/src/test/resources/executables/MAC/chromedriver");
                         WebDriverManager.chromedriver().setup();
-                        driver = new ChromeDriver();
+//                        driver = new ChromeDriver();
                         break;
                     case WINDOWS:
 //                        System.setProperty("webdriver.chrome.driver", userDir + "/src/test/resources/executables/chromedriver.exe");
                         WebDriverManager.chromedriver().setup();
-                        driver = new ChromeDriver();
+//                        driver = new ChromeDriver();
                         break;
 
                     case LINUX:
-                        System.setProperty("webdriver.chrome.driver", userDir + "/src/test/resources/executables/chromedriver");
+//                        System.setProperty("webdriver.chrome.driver", userDir + "/src/test/resources/executables/chromedriver");
                         WebDriverManager.chromedriver().setup();
-                        driver = new ChromeDriver();
+//                        driver = new ChromeDriver();
                         break;
                     default:
                         System.out.println("Please select valid browser!\n");
@@ -114,14 +114,14 @@ public class BaseTest {
                         break;
                 }
 
-//                ChromeOptions options = new ChromeOptions();
-//                options.addArguments("--no-sandbox");
-//                options.addArguments("--headless"); //!!!should be enabled for Jenkins
-//                options.addArguments("--disable-dev-shm-usage"); //!!!should be enabled for Jenkins
-//                options.addArguments("--window-size=1920x1080"); //!!!should be enabled for Jenkins
-//                driver = new ChromeDriver(options);
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--no-sandbox");
+                options.addArguments("--headless"); //!!!should be enabled for Jenkins
+                options.addArguments("--disable-dev-shm-usage"); //!!!should be enabled for Jenkins
+                options.addArguments("--window-size=1920x1080"); //!!!should be enabled for Jenkins
+                driver = new ChromeDriver(options);
 //                WebDriverManager.chromedriver().setup();
-//                driver = new ChromeDriver();
+                driver = new ChromeDriver();
                 wait = new WebDriverWait(driver, Duration.ofMinutes(5));
                 log.info("Chrome browser is loaded!");
             }
