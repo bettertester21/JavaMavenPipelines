@@ -9,7 +9,7 @@
 //     }
 // }
 
-String url = 'https://github.com/foo/bar.git';
+String url = 'https://github.com/bettertester21/JavaMavenPipelines.git';
 String[] res = url.split('/');
 String repoName = res[res.length-1];
 if (repoName.endsWith('.git')) repoName=repoName.substring(0, repoName.length()-4);
